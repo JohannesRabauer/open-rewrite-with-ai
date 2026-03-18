@@ -4,3 +4,6 @@
 [submodule "legacy-banking"]
 	path = legacy-banking
 	url = https://github.com/JohannesRabauer/legacy-banking.git
+[submodule "rewrite-recipe-legacy-banking"]
+	path = rewrite-recipe-legacy-banking
+	url = https://github.com/JohannesRabauer/rewrite-recipe-legacy-banking.git
