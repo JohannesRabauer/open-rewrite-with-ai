@@ -20,19 +20,14 @@ Use these prompts as copy-paste starting points when you want the agent to moder
 Analyze `legacy-banking` and determine which existing OpenRewrite recipes should be reused before any custom recipe is written.
 
 Requirements:
-1. Inspect the code in `legacy-banking` and the plan files in `legacy-banking/plans/`.
-2. Search `rewrite/` for existing recipes and proven implementation patterns relevant to the observed legacy code.
-3. Prefer real reusable recipes from `rewrite/` or generally available OpenRewrite recipes over custom implementation.
-4. Identify the gaps that still require a new recipe in `rewrite-recipe-legacy-banking`.
+1. Inspect the code in `legacy-banking`.
+2. Search [OpenRewrite Recipe Documentation](https://docs.openrewrite.org/running-recipes) for existing recipes.
 
 Output:
-- reusable existing recipe IDs
+- write a composite, declarative recipe in the project "rewrite-recipe-legacy-banking".
 - what each recipe would change in `legacy-banking`
-- target files or patterns
+- instruction to run the composite recipe
 - safe to apply now or not
-- missing banking-specific recipe opportunities
-
-Do not write code yet. I want a concrete modernization inventory, not generic advice.
 ```
 
 ## Prompt 2: Build A Deterministic Composite Recipe For A Safe First Pass
